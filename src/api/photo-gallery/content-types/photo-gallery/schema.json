@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photo_galleries",
+  "info": {
+    "singularName": "photo-gallery",
+    "pluralName": "photo-galleries",
+    "displayName": "Gallery"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Photo Gallery",
+      "required": true
+    },
+    "photos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "default": "other",
+      "enum": [
+        "art-of-life",
+        "product-and-brand",
+        "weddings",
+        "other"
+      ]
+    },
+    "featured": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    }
+  }
+}
