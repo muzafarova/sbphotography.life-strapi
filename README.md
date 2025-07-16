@@ -24,12 +24,26 @@ Build admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build
 npm run build
 ```
 
-[Data Management](https://docs.strapi.io/cms/features/data-management)
-Transfer local data to production
+## Database
+
+Current setup: Strapi Cloud with built-in `postgres@17` database.
+Note, no detabase-related env variables need to be set in the dashbaord (Strapi handles this)
+
+Database schema `public`
+
+To check local database connection:
+
+```
+node-ts test-postgres.ts
+```
+
+To transfer local data to production (and other way around):
 
 ```
 npm run strapi -- transfer
 ```
+
+Reference [Data Management](https://docs.strapi.io/cms/features/data-management)
 
 ## Deployment
 
