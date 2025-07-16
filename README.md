@@ -1,4 +1,4 @@
-# Strapi Backend 
+# Strapi Backend
 
 Headless CMS for https://github.com/muzafarova/sbphotography.life
 
@@ -24,9 +24,16 @@ Build admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build
 npm run build
 ```
 
+[Data Management](https://docs.strapi.io/cms/features/data-management)
+Transfer local data to production
+
+```
+npm run strapi -- transfer
+```
+
 ## Deployment
 
-Project deploys to [Strapi Cloud](https://cloud.strapi.io) (Free plan). 
+Project deploys to [Strapi Cloud](https://cloud.strapi.io) (Free plan).
 
 Refer to [deployment section of the docs](https://docs.strapi.io/dev-docs/deployment) for other options.
 
@@ -57,7 +64,7 @@ npm strapi deploy
 #### features
 
 - Personal repository
-- One production environment 
+- One production environment
 - Built-in email provider
 - Fast & global CDN
 - DDoS protection
