@@ -492,7 +492,7 @@ export interface ApiPhotoGalleryPhotoGallery
       'api::photo-gallery.photo-gallery'
     > &
       Schema.Attribute.Private;
-    photos: Schema.Attribute.Media<'images' | 'files', true>;
+    photos: Schema.Attribute.Media<'images', true>;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &

@@ -20,20 +20,12 @@
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files"
-      ]
+      "allowedTypes": ["images"]
     },
     "category": {
       "type": "enumeration",
       "default": "other",
-      "enum": [
-        "art-of-life",
-        "product-and-brand",
-        "weddings",
-        "other"
-      ]
+      "enum": ["art-of-life", "product-and-brand", "weddings", "other"]
     },
     "featured": {
       "type": "boolean",
